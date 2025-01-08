@@ -1,0 +1,13 @@
+/* for id write with # */
+#firstdiv{
+    background-color: red;
+}
+
+/* for class write with . */
+.red{
+    color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
