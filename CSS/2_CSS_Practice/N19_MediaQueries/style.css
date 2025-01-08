@@ -1,0 +1,58 @@
+/* h1 {
+    background-color: greenyellow;
+}
+
+@media (width: 400px) {
+    h1 {
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        background-color: red;
+    }
+}
+
+@media (max-width: 200px) {
+    h1 {
+        background-color: pink;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    h1 {
+        background-color: orange;
+    }
+}
+
+@media (orientation: landscape) {
+    h1 {
+        background-color: blue;
+    }
+} */
+
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.one {
+    background-color: aqua;
+}
+.two {
+    background-color: greenyellow;
+    position: relative;
+    top: 30px;
+    z-index: 0;
+}
+.three {
+    background-color: pink;
+    position: relative;
+    /* bottom: 30px; */
+    z-index: -1;
+}

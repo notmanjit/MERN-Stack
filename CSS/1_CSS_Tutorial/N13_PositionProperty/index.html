@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent{
+            border: 3px solid red;
+            margin: 34px;
+            padding: 43px;
+            /* position: absolute; */
+
+
+            /* box1 will positioned itself with body or html if the parent class is not positioned */
+            /* Exception:
+            transform, filter, or perspective properties can also make an element appear as positioned */
+
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+            /* this will result the box1 class will get positioned with parent class and not with the body or html with one of these properties even after the parent class position is not declared */
+        }
+
+        .box {
+            width: 50vw;
+            height: 433px;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+        
+        .box1 {
+            /* width: 60vw;
+            height: 100px; */
+            background-color: aqua;
+            /* position: absolute;
+            top: 0px;
+            left: 0px; */
+            /* z-index: 1; */
+
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 111px;
+        }
+
+        .box2 {
+            background-color: chartreuse;
+            /* position: relative; */
+            /* top: -50px;
+            left: 30px; */
+        }
+
+        .box3 {
+            background-color: blueviolet;
+            /* position: fixed;
+            bottom: 0px;
+            left: 20vw;
+            height: 70px; */
+        }
+
+        .box4 {
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

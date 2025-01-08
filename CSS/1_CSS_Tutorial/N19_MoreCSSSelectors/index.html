@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* .box::first-line {
+            color:dodgerblue;
+        } */
+
+        /* .box:first-child::first-line {
+            color: aqua;
+        } */
+
+        /* applied to all the elements in boxes class */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* attribute selector */
+        /* [data-color="primary"] {
+            padding-top: 50px;
+        } */
+
+        /* grouping */
+        /* p, a, .box, [data-color="primary"] {
+            padding-top: 50px;
+        } */
+
+        /* .box:nth-child(odd) {
+            background-color: darkgray;
+        } */
+
+        /* .box:nth-last-child(1) {
+            background-color: brown;
+        } */
+
+        .boxes::before {
+            content: "Hello World";
+            color: blue;
+        }
+
+        .boxes::after {
+            content: "Hello World";
+            color: red;
+        }
+
+        /* change the color when you select the text */
+        ::selection {
+            background-color: black;
+            color: white;
+        }
+
+        .para::selection {
+            background-color: rgb(161, 80, 204);
+            color: rgb(255, 255, 255);
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(57, 120, 237);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio repellendus
+            aperiam fuga reprehenderit sed ipsa neque. Aut, accusantium temporibus? Nihil, vitae quasi odio suscipit
+            praesentium commodi, facere blanditiis temporibus assumenda veritatis odit neque fugit modi veniam? Itaque
+            quis nesciunt eaque maxime, suscipit voluptatum blanditiis temporibus hic, quaerat exercitationem sequi
+            aliquam. Amet aliquam reprehenderit corrupti ea recusandae? Quo corrupti reiciendis ipsa asperiores,
+            consequuntur quas voluptates maiores facilis repellat enim reprehenderit perferendis hic at. </div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+
+        <input type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit vitae culpa nostrum laboriosam quo quae
+        accusantium. Adipisci asperiores aliquam quia deserunt cum accusamus.
+    </div>
+</body>
+
+</html>

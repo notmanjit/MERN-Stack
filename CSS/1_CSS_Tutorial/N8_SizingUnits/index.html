@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            height: 10vh;
+            /* margin: auto; */
+            text-align: center;
+            font-size: 18px;
+            background-color: aqua;
+        }
+
+        .box p {
+            font-size: 2em;
+            /* em stands for emphemeral unit
+            1em means equal to the current font size, and 2em means 2 times the current font size. Here in the box font is 18px, the 2em equals 36px */
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 23px auto;
+            background-color: aqua;
+            min-height: 80vh;
+            /* The min height of the container will be 80vh whether there is content available or not */
+        }
+
+        /*         
+        .container p {
+            font-size: 2rem;
+            /* root em
+            Similar to em units. They reference the root element typically the HTML element itself, the default font size is 16px, we can change this. Here we given the HTML font size = 12px that means p elements font size will be 24px */
+
+        /* } */
+
+
+        .container>div {
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .container div div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: black;
+            margin: auto;
+            color: white;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>
+            I am a box
+        </p>
+    </div>
+
+    <div class="container">
+        <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magni debitis facilis voluptatem quos
+            praesentium laboriosam, possimus soluta animi, blanditiis autem fugit beatae. Hic vel quos tempora, velit
+            repudiandae labore voluptatem possimus sapiente quam!
+        </p> -->
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, magni debitis facilis voluptatem quos
+            praesentium laboriosam, possimus soluta animi, blanditiis autem fugit beatae. Hic vel quos tempora, velit
+            repudiandae labore voluptatem possimus sapiente quam!
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo assumenda possimus ipsam iusto odio
+                officia porro, explicabo, excepturi quis inventore labore fuga nesciunt?
+            </div>
+        </div>
+
+        <!-- <p>lorem1000</p> -->
+    </div>
+
+    <div class="mycont">
+        I am a another container
+    </div>
+
+</body>
+
+</html>

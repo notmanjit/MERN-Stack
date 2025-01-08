@@ -1,0 +1,58 @@
+.container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+
+    /* animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: normal; */
+
+    /* these 2 are not used much */
+    /* animation-play-state: paused; */
+    /* animation-fill-mode: forwards; */
+
+    /* shorthand 
+    animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: move 2s ease-in-out 1s 3 normal; */
+
+    animation: rotate 2s ease-in-out infinite alternate;
+}
+
+/* @keyframes move {
+    from {
+
+    }
+
+    to {
+        background-color: dodgerblue;
+        transform: translateX(400px) translateY(400px);
+    }
+} */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(50deg);
+    }
+    30% {
+        transform: rotate(100deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    80% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

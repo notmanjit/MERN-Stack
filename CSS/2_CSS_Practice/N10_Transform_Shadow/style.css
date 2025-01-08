@@ -1,0 +1,53 @@
+section {
+    margin-top: 100px;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    background-color: #50a046;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+div:nth-child(2n) {
+    background-color: #f7d755;
+}
+
+div:nth-child(3n) {
+    background-color: #ffb413;
+}
+
+#one {
+    transform: rotate(45deg);
+}
+
+#two {
+    transform: scale(0.5);
+
+    /* width = 0.5 | height = 2 */
+    /* transform: scale(0.5, 2); */
+}
+
+#three {
+    transform: translate(100px);
+    /* transform: translate(-100px); */
+    /* transform: translate(100px, 100px); */
+}
+
+#four {
+    transform: skew(40deg);
+}
+
+#five {
+    transform: rotate(45deg) translate(100px);
+
+    /* h-offset, v-offset, blur, color */
+    /* box-shadow: 5px 5px 15px black; */
+    
+    /* h-offset, v-offset, blur, spread color */
+    /* box-shadow: 5px 5px 15px 5px black ; */
+    box-shadow: 5px 5px 15px 5px black inset;
+    /* inset means shadow inside */
+}

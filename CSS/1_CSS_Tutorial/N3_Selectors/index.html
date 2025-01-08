@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            color: red;
+            background-color: yellow;
+        } */
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        /* It means p is the direct child of div */
+        div > p {
+            background-color: cornflowerblue;
+        }
+        
+        /* Decendent Selector */
+        /* It means if any how p is the indirect child of div
+        div > article > p */
+        div p {
+            background-color: aqua;
+        }
+
+        /* Universal selector */
+        /* Applied to all elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: deeppink;
+            color: aqua;
+        }
+
+        p:first-child {
+            /* applied to  all first child */
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        I am a div
+        <p>I am a para inside a div</p>     <!-- p is the direct child of div -->
+    </div>
+    
+    <div id="green">
+        I am also a div
+    </div>
+
+    <div>
+        <p>I am a para inside a div</p>     <!-- p is the direct child of div -->
+    </div>
+
+    <div>
+        <article>
+            <p>I am a para inside a article and div</p>     <!-- p is the indirect child of div -->
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook1.com">Facebook</a>
+
+    <div>
+        <p>I am first child</p>     <!-- This is the first child of div -->
+        <p>I am second child</p>
+    </div>
+</body>
+
+</html>

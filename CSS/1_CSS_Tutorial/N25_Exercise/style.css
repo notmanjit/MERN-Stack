@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+
+.main-container {
+    /* width: 100vw;
+    height: 100vh; */
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.about {
+    width: 60%;
+    margin: 50px 0;
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+    align-self: flex-start;
+    gap: 23px;
+}
+
+.about img {
+    width: 55px;
+    border: 2px solid;
+    border-radius: 50px
+}
+
+.about h2 {
+    font-weight: 400;
+}
+
+.about h2 span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+}
+
+.item {
+    /* border: solid; */
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.text {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#eng {
+    visibility: hidden;
+}
+
+.text h5 {
+    font-weight: 400;
+}
+
+.all-buttons {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bit-32 {
+    background-color: #5cb85c;
+    border-width: 0;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+}
+
+.bit-64 {
+    background-color: #00b6d1;
+    border-width: 0;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1280px) {
+    .sub-container {
+        width: 805px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .sub-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}

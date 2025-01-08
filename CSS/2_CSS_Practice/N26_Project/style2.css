@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", system-ui;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    margin-top: 0.5rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0.5rem;
+}
+
+.brand {
+    width: 33%;
+    height: 3rem;
+}
+
+.brand i {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-search {
+    display: flex;
+    width: 34%;
+    height: 3rem;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    background-color: #1f1f1f;
+    width: 475px;
+    height: 3rem;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+}
+
+.home {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.home i {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    opacity: 0.6;
+}
+
+.main-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-here {
+    width: 100%;
+    height: 100%;
+}
+
+.search-icon i {
+    font-size: 1.25rem;
+    padding-right: 0.75rem;
+    opacity: 0.6;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #1f1f1f;
+    font-size: 1rem;
+    opacity: 0.6;
+    caret-color: #fff;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.browse {
+    width: 2rem;
+    height: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    padding-left: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.browse i {
+    font-size: 1.25rem;
+    opacity: 0.6;
+}
+.browse i:hover {
+    opacity: 1;
+}
+
+.nav-option {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33%;
+    height: 3rem;
+}
+
+.nav-option-button {
+    border: none;
+    border-radius: 100px;
+    font-family: "Montserrat", system-ui;
+    font-weight: bold;
+    height: 2rem;
+    padding: 0.25rem 1rem;
+    margin: 0 0.25rem;
+}
+
+.install {
+    background-color: #000;
+    color: white;
+}
+
+.install i {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+
+.install:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.bell {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 0 0.25rem;
+    opacity: 0.6;
+}
+
+.nav-icon:hover {
+    opacity: 1;
+}
+
+.account {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    margin: 0 1rem 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #7d4b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .premium {
+        display: none;
+    }
+}
+
+.max-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: #121212;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.library {
+    display: flex;
+    height: 4rem;
+}
+
+.library-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.library-text {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    opacity: 0.6;
+}
+
+.library-text:hover {
+    opacity: 1;
+}
+
+.library-icon {
+    width: 1.25rem;
+}
+
+.lib-text {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.library-option {
+    display: flex;
+    align-items: center;
+}
+
+.library-option-icon {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.6;
+}
+
+.library-option-icon:hover {
+    opacity: 1;
+}
+
+.box {
+    /* height: 8rem; */
+    background-color: #1f1f1f;
+    margin: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+}
+
+.box-text1 {
+    margin: 0 0 0.75rem;
+    font-weight: bold;
+}
+
+.box-text2 {
+    margin-top: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.create {
+    border: none;
+    border-radius: 100px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    overflow: auto;
+    margin: 0.5rem 0.5rem 0 0;
+    padding-left: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.main-content-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #121212;
+    height: 4rem;
+    padding: 0 0.75rem;
+    padding-bottom: 0;
+}
+
+.badge {
+    border: none;
+    border-radius: 100px;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.cards {
+    padding: 0 0.25rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 160px;
+    padding: 0.75rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.card:hover {
+    background-color: #1f1f1f;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 60%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player {
+    width: 100%;
+    height: 4.5rem;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.player-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+}
+
+.song-img {
+    height: 3.75rem;
+    border-radius: 0.5rem;
+    margin-left: 0.25rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.song {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.artist {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.player {
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-info i {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-left: 1.25rem;
+}
+
+.player-info i:hover {
+    opacity: 1;
+}
+
+.player-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem; 
+    padding: 0 1rem;
+    opacity: 0.6;  
+}
+
+.player-control-icon:hover {
+    opacity: 1;  
+}
+
+.play {
+    height: 2rem;
+    opacity: 1;  
+}
+.play:hover {
+    transform: scale(1.1); 
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    width: 80%;
+    appearance: none;
+    margin: 0 0.5rem;
+}
+
+.time {
+    font-size: 0.75rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    position: relative;
+    margin-top: -5px;
+}
+
+.player-options {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.add-control {
+    height: 1.25rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    padding: 0 0.5rem;
+}
+
+.add-control:hover {
+    opacity: 1;
+}
+
+.volume-bar {
+    appearance: none;
+    height: 0.2rem;
+}
+
+.volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+}

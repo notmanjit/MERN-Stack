@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            width: 400px;
+            height: 400px;
+            background-color: hotpink;
+            margin: 50px;
+            font-size: 20px;
+        }
+        #inner {
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            /* margin-left: 10%; */
+
+            /* The font size will set relative to the parent i.e. outer
+            if font size of the parent is 20px then inner font size will be 2em=40px*/
+            font-size: 2em;
+
+            /* Some of the properties will set relative to the element(here it is inner) not the parent(ex. width, height, padding, margin)
+            font size = 2em = 40px(relative to parent) | padding = 1em = 40px(relative to element) if padding = 2em = 80px */
+            padding: 1em;
+        }
+
+        button {
+            font-size: 50px;
+            /* left right padding will be relative to the element
+            i.e. font size = 50px | padding left-right = 2em = 100px */
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        Hello
+        <div id="inner">World</div>
+    </div>
+    <button>Submit</button>
+</body>
+</html>

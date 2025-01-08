@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* the order of specificity is:
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+        h1 {
+            color: aqua !important;
+        }
+        /* !important - When you add !important to a CSS rule, it will take precedence over other rules affecting the same element (Even the inline style) */
+        .yellow {
+            color: yellow;
+        }
+        .red {
+            color: red;
+        }
+        .purple {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: blue" class="yellow red purple">CSS - Specificity</h1>
+    </div>
+</body>
+</html>

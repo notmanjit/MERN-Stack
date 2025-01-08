@@ -1,0 +1,27 @@
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 10px;
+    box-shadow: 0 4px 5px black;
+    transition: 0.25s;
+}
+
+img {
+    width: 100%;
+    border-bottom: 1px solid;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.desc {
+    padding: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.card:hover {
+    box-shadow: 1px 7px 10px  black;
+}

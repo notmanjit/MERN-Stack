@@ -1,0 +1,49 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    color: #1b74e4;
+}
+
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+.userbtn {
+    background-color: aqua;
+}
+
+/* #myID p {
+    color: green;
+} */
+
+div[id="myID"] p {
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: red;
+}
+
+/* div ul li:nth-of-type(4) {
+    color: red;
+} */
+
+div ul li:nth-of-type(3n) {
+    color: red;
+}
+
+p::first-line {
+    background-color: red;
+    color: white;
+}
+p::first-letter {
+    background-color: green;
+    color: yellow;
+}
+
+li::selection {
+    background-color: chartreuse ;
+}

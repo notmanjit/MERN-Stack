@@ -1,0 +1,29 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: cornflowerblue;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    background-color: hotpink;
+
+    /* transition-property: height;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s; */
+
+    /* shorthand */
+    /* transition: height 2s ease 1s; */
+    transition: all 2s ease 1s;
+
+    /* change transition-timing-function in inspect > styles in cubic-bezier editor like cubic-bezier(0.07, 0.78, 0.25, 1) the effect you want */
+}
+
+.box:hover {
+    height: 500px;
+    background-color: orange;
+    
+}

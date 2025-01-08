@@ -1,0 +1,54 @@
+#mainTopic {
+    color: blue;
+}
+
+* {
+    text-align: center;
+}
+
+h1, h3, h5 {
+    font-family: Georgia;
+}
+
+/* .para {
+    color: white;
+    background-color: cornflowerblue;
+} */
+
+/* OR */
+
+/* h3 + p will apply the properties to the only first p sibling
+general sibling combinator : this will apply to all the p siblings*/
+h3 ~ p {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+div button {
+    background-color: purple;
+    color: azure;
+}
+
+button:hover {
+    background-color: yellow;
+    color: blue;
+}
+
+.para:nth-child(2n+1) {
+    color: yellow;
+}
+
+h1::first-letter {
+    color: red;
+}
+
+/* [type="checkbox"]:checked + label {
+    color: darkgreen;
+} */
+
+/* OR */
+
+#yes:checked + label {
+    color: darkgreen;
+
+}

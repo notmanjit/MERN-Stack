@@ -1,0 +1,42 @@
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s ease-in 0.5s;
+}
+
+#box1:hover {
+    width: 600px;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: translate(200px, 200px) rotate(90deg);
+    color: white;
+}
+
+#box3 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transform: skewX(20deg);
+}
+
+#box4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    box-shadow: 2px 2px 5px green;
+}
+
+#myPic {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: pink;
+    background-image: url("https://img.freepik.com/premium-photo/nature-seascapes_925962-9882.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=ais");
+    background-size: cover;
+    opacity: 50%;
+}

@@ -1,0 +1,28 @@
+.container {
+    width: 900px;
+    height: 450px;
+    border: 2px solid black;
+
+
+    background-image: url("https://i2.wp.com/www.modishgeek.com/wp-content/uploads/2016/07/PokemonJohtoLeagueFeatured.jpg?resize=678%2C381");
+
+    /* background-position: top right; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+}
+
+img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    /* object-fit: fill; */
+    /* object-fit: scale-down; */
+    /* object-fit: contain; */
+
+    /* object-position: bottom right; */
+    /* object-position: 10px 20px; */
+    object-position: 50% 50%;
+}
+
