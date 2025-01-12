@@ -1,0 +1,32 @@
+<!-- you can write html as template to send in response -->
+
+<!-- EJS (Embedded JavaScript templates)
+EJS is a simple templating language that lets you genetate HTML markup with plain javascript -->
+
+
+<%- include("includes/head") %>
+
+<body>
+    <h1>This is home page 1+2</h1>
+
+    <%# <----this is comment tag %>
+    <%# this is breaking tag---> %>
+    
+    <!-- visit this site (https://ejs.co/) and see the tags to understand -->
+    
+
+
+    <!-- <h1> <%= 3*5 %> </h1> -->
+    <!-- <h1> <%= "manjit".toUpperCase() %> </h1> -->
+    <!-- <h1> <%= ["mango", "apple", "banana"][2] %> </h1> -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim voluptatum molestiae eius fugit quae
+        consectetur eligendi animi. Eaque quae deleniti ratione id perspiciatis dicta sint praesentium aliquid dolore
+        quibusdam.</p>
+    <button>Click me</button>
+
+    <%- include("includes/footer") %>
+
+</body>
+
+</html>

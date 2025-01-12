@@ -1,0 +1,32 @@
+<!-- 
+ we can say "include" are used to create sub template
+ here we have removed the boiler plate(head) and added the "include" line
+ the head is in includes folder with named head.ejs
+ if our template is in views folder (views/insta.ejs)
+ then the includes folder correct path will be in the views folder and inside includes folder head.ejs will be placed (views/includes/head.ejs)
+-->
+<%- include("includes/head.ejs") %>
+
+    <body>
+        <h1>This account belongs to @<%= data.name %>
+        </h1>
+        <button>Follow</button>
+        <button>Message</button>
+
+        <p>Followers : <%= data.followers %> &nbsp; &nbsp; &nbsp; Following : <%= data.following %>
+        </p>
+        <hr>
+
+        <% for (post of data.posts) { %>
+            <img src="<%= post.image %>" alt="img">
+            <p>Likes : <%= post.likes %> &nbsp; &nbsp; &nbsp; Comments : <%= post.comments %>
+            </p>
+            <% } %>
+
+            <!-- same here footer.ejs is in includes folder -->
+                <%- include("includes/footer") %>
+
+                    <script src="/script.js"></script>
+    </body>
+
+    </html>

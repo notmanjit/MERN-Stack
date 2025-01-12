@@ -1,0 +1,17 @@
+<%- include("includes/head") %>
+
+<body>
+    <h1>Dice gave value <%= diceVal %></h1>
+
+    <!-- conditional statement -->
+    <%#  the below used is scriptlet tag, for control-flow %>
+
+    <% if (diceVal==6) { %>
+        <h2> Nice! Roll dice again</h2>
+        <% } %>
+
+        <%- include("includes/footer") %>
+
+</body>
+
+</html>
